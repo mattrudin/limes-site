@@ -16,7 +16,7 @@
 * { box-sizing: border-box; margin: 0; }
 html[lang=de] [lang=en], html[lang=en] [lang=de] { display: none; }
 body { background: var(--ink); color: var(--parchment); font: 400 1.2rem/1.5 Cormorant, Georgia, serif; -webkit-font-smoothing: antialiased; }
-h1, h2, nav, .draft strong { font-family: Cinzel, "Times New Roman", serif; letter-spacing: .06em; }
+h1, h2, nav { font-family: Cinzel, "Times New Roman", serif; letter-spacing: .06em; }
 a { color: var(--gold); overflow-wrap: anywhere; }
 nav { display: flex; justify-content: space-between; align-items: center; padding: 16px; max-width: 1112px; margin: 0 auto; font-size: .9rem; }
 nav b { font-weight: 700; letter-spacing: .3em; }
@@ -30,9 +30,6 @@ p, ul { margin-bottom: .8rem; }
 ul { padding-left: 1.2em; }
 li { margin-bottom: .5rem; }
 code { font-size: .85em; }
-/* Entwurfsmarkierung: entfernen, wenn der Benutzer das Datum in Abschnitt 10 setzt */
-.draft { border: 2px solid var(--red); background: rgba(156,42,30,.18); padding: 12px 16px; border-radius: 4px; margin-bottom: 2rem; }
-mark { background: var(--red); color: var(--parchment); padding: 0 .2em; }
 footer { padding: 3rem 16px; font-size: 1rem; color: var(--parchment-dim); text-align: center; }
 footer a { color: var(--parchment-dim); }
 </style>
@@ -45,13 +42,8 @@ footer a { color: var(--parchment-dim); }
 </nav>
 
 <main>
-<div class="draft">
-  <p lang="de"><strong>Entwurf</strong> – noch nicht veröffentlicht. Das Datum in Abschnitt 10 fehlt noch.</p>
-  <p lang="en"><strong>Draft</strong> – not yet published. The date in section 10 is still missing.</p>
-</div>
-
 <article lang="de">
-  <h1>Datenschutzerklärung – Limes: Rome Tower Defense (Entwurf)</h1>
+  <h1>Datenschutzerklärung – Limes: Rome Tower Defense</h1>
   <h2>1. Verantwortlicher</h2>
   <p>Matthias Rudin (Privatperson), Schweiz, E-Mail: matthias.rudin@live.com. (Ob zusätzlich ein Impressum nötig ist, entscheidet der Verantwortliche selbst.)</p>
   <h2>2. Worum es geht</h2>
@@ -91,11 +83,11 @@ footer a { color: var(--parchment-dim); }
   <h2>9. Deine Rechte</h2>
   <p>Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Datenübertragung; Widerruf der Einwilligung mit Wirkung für die Zukunft; Beschwerde bei einer Aufsichtsbehörde (in der Schweiz der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte, EDÖB; in der EU die Aufsichtsbehörde deines Wohnsitzlandes). Anfragen an matthias.rudin@live.com, mit deiner Tester-ID, sonst kann ich Protokolle nicht zuordnen.</p>
   <h2>10. Änderungen</h2>
-  <p>Diese Erklärung kann sich mit neuen Versionen ändern; das Datum der letzten Änderung steht hier: <mark>[Datum]</mark>.</p>
+  <p>Diese Erklärung kann sich mit neuen Versionen ändern; das Datum der letzten Änderung steht hier: 04.11.2026.</p>
 </article>
 
 <article lang="en">
-  <h1>Privacy Policy – Limes: Rome Tower Defense (draft)</h1>
+  <h1>Privacy Policy – Limes: Rome Tower Defense</h1>
   <h2>1. Controller</h2>
   <p>Matthias Rudin (private individual), Switzerland, email: matthias.rudin@live.com. (Whether a legal notice is also needed is the controller's decision.)</p>
   <h2>2. What this is about</h2>
@@ -135,7 +127,7 @@ footer a { color: var(--parchment-dim); }
   <h2>9. Your rights</h2>
   <p>Access, rectification, erasure, restriction, objection and data portability; withdrawal of consent with effect for the future; complaint to a supervisory authority (in Switzerland the Federal Data Protection and Information Commissioner, FDPIC; in the EU the authority of your country of residence). Send requests to matthias.rudin@live.com with your tester ID, otherwise I cannot assign logs.</p>
   <h2>10. Changes</h2>
-  <p>This policy can change with new versions; date of the last change: <mark>[date]</mark>.</p>
+  <p>This policy can change with new versions; date of the last change: 4 November 2026.</p>
 </article>
 </main>
 

@@ -1,0 +1,359 @@
+<!doctype html>
+<!-- Erzeugt von tools/site_build_en.py aus site/index.html; nicht von Hand bearbeiten. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limes: Rome Tower Defense – Roman Strategy Game for iPhone &amp; Android</title>
+<meta name="description" content="Limes: Rome Tower Defense is a 3D tower defense game on the Roman frontier for iPhone and Android. Play the free Germania beta now.">
+<meta name="google-site-verification" content="b3Cb6cH3NlNG7FaV2SI8YvleHDIZ2CE3mqio56bowBI">
+<link rel="canonical" href="https://mattrudin.github.io/limes-site/en/">
+<link rel="alternate" hreflang="de" href="https://mattrudin.github.io/limes-site/">
+<link rel="alternate" hreflang="en" href="https://mattrudin.github.io/limes-site/en/">
+<link rel="alternate" hreflang="x-default" href="https://mattrudin.github.io/limes-site/">
+<link rel="icon" href="../media/icon.png">
+<link rel="apple-touch-icon" href="../media/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mattrudin.github.io/limes-site/en/">
+<meta property="og:title" content="Limes: Rome Tower Defense">
+<meta property="og:description" content="Hold Rome's frontier from the Rhine to the Teutoburg Forest. Play the beta now.">
+<meta property="og:image" content="https://mattrudin.github.io/limes-site/media/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Roman fort in the evening light, scene from Limes">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "VideoGame",
+ "name": "Limes: Rome Tower Defense", "url": "https://mattrudin.github.io/limes-site/en/", "image": "https://mattrudin.github.io/limes-site/media/og-image.jpg",
+ "description": "3D tower defense on the Roman frontier for iPhone and Android, Germania campaign with 15 missions.",
+ "genre": ["Tower Defense", "Strategy"], "gamePlatform": ["iOS", "Android"], "operatingSystem": "iOS, Android",
+ "applicationCategory": "GameApplication", "inLanguage": ["de", "en"], "playMode": "SinglePlayer",
+ "author": {"@type": "Person", "name": "Matthias Rudin"},
+ "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}
+</script>
+<meta name="theme-color" content="#1b1410">
+<style>
+@font-face { font-family: Cinzel; src: url(../fonts/Cinzel.ttf); font-display: swap; }
+@font-face { font-family: Cormorant; src: url(../fonts/CormorantGaramond.ttf); font-display: swap; }
+
+:root {
+  --ink: #1b1410;
+  --ink-2: #2a1f18;
+  --parchment: #efe2c4;
+  --parchment-dim: #c9b892;
+  --red: #9c2a1e;
+  --red-hi: #c23b27;
+  --gold: #d6a548;
+  --moss: #4d5a3a;
+}
+* { box-sizing: border-box; margin: 0; }
+html[lang=de] [lang=en], html[lang=en] [lang=de] { display: none; }
+body {
+  background: var(--ink);
+  color: var(--parchment);
+  font: 400 1.2rem/1.5 Cormorant, Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, .btn, .eyebrow, nav { font-family: Cinzel, "Times New Roman", serif; letter-spacing: .06em; }
+h2 { font-size: clamp(1.7rem, 5vw, 2.6rem); line-height: 1.15; margin-bottom: .6em; }
+h3 { font-size: 1.15rem; color: var(--gold); margin-bottom: .3em; }
+a { color: var(--gold); }
+section { padding: 5rem 16px; }
+.wrap { max-width: 1080px; margin: 0 auto; }
+.eyebrow { display: block; color: var(--gold); font-size: .8rem; text-transform: uppercase; letter-spacing: .25em; margin-bottom: 1rem; }
+.lead { font-size: 1.35rem; color: var(--parchment-dim); max-width: 38em; }
+
+/* Kopfzeile */
+nav {
+  position: absolute; inset: 0 0 auto; z-index: 2;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px; max-width: 1112px; margin: 0 auto; font-size: .9rem;
+}
+nav b { font-weight: 700; letter-spacing: .3em; }
+.lang { text-decoration: none; background: none; border: 1px solid var(--parchment-dim); color: var(--parchment); font: inherit; padding: .3em .8em; border-radius: 3px; cursor: pointer; }
+
+/* Hero */
+.hero {
+  position: relative; min-height: 100svh; display: flex; align-items: center;
+  background: linear-gradient(180deg, rgba(27,20,16,.35) 0%, rgba(27,20,16,.55) 55%, var(--ink) 100%),
+              url(../media/02-kastell-abendlicht.webp) center 30% / cover;
+  padding: 6rem 16px 3rem;
+}
+.hero .wrap { display: grid; gap: 3rem; align-items: center; grid-template-columns: 1fr; width: 100%; }
+@media (min-width: 860px) { .hero .wrap { grid-template-columns: 1.3fr 1fr; } }
+.hero h1 { font-size: clamp(3rem, 13vw, 6.5rem); line-height: .95; letter-spacing: .12em; text-shadow: 0 4px 30px rgba(0,0,0,.6); }
+.hero h1.wordmark img { display: block; width: min(100%, 520px); height: auto; filter: drop-shadow(0 6px 24px rgba(0,0,0,.65)); }
+.hero p.lead { color: var(--parchment); margin: 1.5rem 0 2rem; text-shadow: 0 2px 12px rgba(0,0,0,.8); }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex; align-items: center; gap: .6em;
+  padding: .9em 1.4em; border-radius: 4px; text-decoration: none; font-size: .95rem; font-weight: 700;
+  background: var(--red); color: var(--parchment); border: 1px solid var(--red-hi);
+  box-shadow: 0 6px 20px rgba(0,0,0,.4); transition: background .2s, transform .2s;
+}
+.btn:hover { background: var(--red-hi); transform: translateY(-2px); }
+.btn.ghost { background: rgba(27,20,16,.6); border-color: var(--parchment-dim); }
+.btn svg { width: 1.2em; height: 1.2em; fill: currentColor; }
+.fine { margin-top: 1rem; font-size: 1rem; color: var(--parchment-dim); }
+
+/* Telefonrahmen für Spielclips */
+.phone {
+  aspect-ratio: 9 / 16; width: min(100%, 300px); margin: 0 auto;
+  border-radius: 28px; padding: 8px; background: #0d0a08;
+  box-shadow: 0 0 0 1px #3a2d22, 0 30px 60px rgba(0,0,0,.6);
+}
+.phone video { width: 100%; height: 100%; object-fit: cover; border-radius: 21px; display: block; background: #000; }
+
+/* Akte */
+.acts { background: var(--ink); }
+.act-list { display: grid; gap: 20px; grid-template-columns: 1fr; margin-top: 2.5rem; }
+@media (min-width: 760px) { .act-list { grid-template-columns: repeat(3, 1fr); } }
+.act {
+  position: relative; min-height: 420px; border-radius: 6px; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end; padding: 24px;
+  background-size: cover; background-position: center;
+  border: 1px solid #3a2d22;
+}
+.act::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(20,15,12,.92) 75%); }
+.act > * { position: relative; }
+.act .num { font-family: Cinzel, serif; font-size: 3rem; color: var(--gold); opacity: .85; line-height: 1; }
+.act p { color: var(--parchment-dim); font-size: 1.1rem; }
+
+/* Features */
+.features { background: linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%); }
+.feature { display: grid; gap: 2rem; align-items: center; grid-template-columns: 1fr; margin-top: 4.5rem; }
+@media (min-width: 760px) {
+  .feature { grid-template-columns: 1fr 1fr; }
+  .feature:nth-of-type(even) > :first-child { order: 2; }
+}
+.feature .phone { width: min(100%, 260px); }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 440px; margin: 0 auto; width: 100%; }
+.duo figure { margin: 0; }
+.duo .phone { width: 100%; border-radius: 20px; padding: 6px; }
+.duo .phone video { border-radius: 15px; }
+.duo figcaption { margin-top: .6rem; text-align: center; font: .75rem Cinzel, serif; letter-spacing: .08em; color: var(--gold); }
+.feature p { color: var(--parchment-dim); max-width: 28em; }
+
+.more { display: grid; gap: 24px; grid-template-columns: 1fr; margin-top: 5rem; }
+@media (min-width: 760px) { .more { grid-template-columns: repeat(3, 1fr); } }
+.more div { border-top: 2px solid var(--red); padding-top: 1rem; }
+.more p { color: var(--parchment-dim); font-size: 1.1rem; }
+
+/* Britannia */
+.teaser {
+  text-align: center;
+  background: radial-gradient(ellipse at 50% 120%, #2b4652 0%, #172630 45%, var(--ink) 80%);
+  padding: 7rem 16px;
+}
+.teaser .lead { margin: 0 auto; }
+
+/* Beta */
+.beta { background: var(--parchment); color: var(--ink); }
+.beta .lead, .beta p { color: #4a3b2e; }
+.beta h2 { color: var(--red); }
+.steps { display: grid; gap: 24px; grid-template-columns: 1fr; margin: 2.5rem 0; counter-reset: s; }
+@media (min-width: 760px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+.steps li { list-style: none; counter-increment: s; }
+.steps li::before { content: counter(s, upper-roman); display: block; font: 700 2rem Cinzel, serif; color: var(--red); }
+.steps h3 { color: var(--ink); }
+.store-id { display: flex; align-items: center; gap: 20px; margin-bottom: 2rem; }
+.store-id img { border-radius: 22%; box-shadow: 0 8px 24px rgba(27,20,16,.35); flex: none; }
+.store-id strong { font: 700 1.15rem Cinzel, serif; letter-spacing: .04em; }
+.store-id p { margin-top: .2em; font-size: 1.1rem; }
+.platform { margin-top: 2rem; }
+.platform h3 { color: var(--ink); margin-bottom: .8rem; }
+.platform p { margin-top: .8rem; font-size: 1.05rem; }
+.btn.off { opacity: .55; cursor: default; box-shadow: none; }
+.btn.off:hover { background: var(--red); transform: none; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand img { border-radius: 22%; }
+
+footer { padding: 3rem 16px; font-size: 1rem; color: var(--parchment-dim); text-align: center; }
+footer a { color: var(--parchment-dim); margin: 0 .6em; }
+
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <b class="brand"><img src="../media/icon.png" alt="" width="32" height="32">LIMES</b>
+  <a class="lang" href="../?lang=de" hreflang="de" aria-label="Deutsche Version">DE</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="wordmark"><img src="../media/wordmark.webp" alt="Limes: Rome Tower Defense" width="960" height="478"></h1>
+      <p class="lead">
+        
+        <span lang="en">Germania, at the edge of the empire. Raise towers, hold the fort and lead your legion from the Rhine deep into the Teutoburg Forest. A tower defense game where terrain, weather and water matter.</span>
+      </p>
+      <div class="ctas">
+        <!-- Platzhalter: TestFlight-Link aus AP 3 / AP 8 -->
+        <a class="btn" href="#beta">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.4-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.2zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.1 1.1.1 2.3-.6 3-1.5z"/></svg>
+          <span lang="en">iPhone beta</span>
+        </a>
+        <a class="btn ghost" href="#beta">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.3 11.3 2.4 2.4-11.2 6.4 8.8-8.8zm3.8-3.8 2.9 1.7c.8.5.8 1.6 0 2l-2.9 1.7-2.6-2.7 2.6-2.7zM6.1 2.1l11.2 6.4-2.4 2.4-8.8-8.8z"/></svg>
+          <span lang="en">Android beta</span>
+        </a>
+      </div>
+      <p class="fine"><span lang="en">Free · Beta open to everyone · English &amp; German</span></p>
+    </div>
+    <div class="phone">
+      <video src="../media/web_15_haeuptling.mp4" poster="../media/web_15_haeuptling.jpg" autoplay muted loop playsinline aria-label="Gameplay: the chieftain's warband charges the legion"></video>
+    </div>
+  </div>
+</header>
+
+<section class="acts">
+  <div class="wrap">
+    <span class="eyebrow"><span lang="en">Germania campaign · 15 missions</span></span>
+    <h2><span lang="en">Three acts at the edge of the empire</span></h2>
+    <div class="act-list">
+      <article class="act" style="background-image:url(../media/01-wachturm-morgennebel.webp)">
+        <span class="num">I</span>
+        <h3><span lang="en">The Frontier</span></h3>
+        <p><span lang="en">Watchtowers in the morning mist and a timber fort. The first tribes test how firmly Rome really stands.</span></p>
+      </article>
+      <article class="act" style="background-image:url(../media/04-flussuebergang.webp)">
+        <span class="num">II</span>
+        <h3><span lang="en">The Rhine</span></h3>
+        <p><span lang="en">Fords, burning bridges, a supply convoy. And a river that rises until it sweeps your own towers away.</span></p>
+      </article>
+      <article class="act" style="background-image:url(../media/07-herbstlicher-grenzwald.webp)">
+        <span class="num">III</span>
+        <h3><span lang="en">Teutoburg Forest</span></h3>
+        <p><span lang="en">Fog, ambushes, dwindling supplies. In the forest every position counts, and at the end lies the chieftain's camp.</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="wrap">
+    <span class="eyebrow"><span lang="en">What makes Limes different</span></span>
+    <h2><span lang="en">Build smart. The land fights back.</span></h2>
+
+    <div class="feature">
+      <div class="duo">
+        <figure><div class="phone"><video src="../media/web_10_hochwasser.mp4" poster="../media/web_10_hochwasser.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div><figcaption><span lang="en">X · Flood</span></figcaption></figure>
+        <figure><div class="phone"><video src="../media/web_07_bruecke.mp4" poster="../media/web_07_bruecke.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div><figcaption><span lang="en">VII · River crossing</span></figcaption></figure>
+      </div>
+      <div>
+        <h3><span lang="en">The river decides</span></h3>
+        <p><span lang="en">The Germanic tribes bridge the Rhine. Bring the bridges down before they stand. Fords open paths, deep water blocks them, and the flood rises in phases until it uproots trees and sweeps timber towers away.</span></p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="phone"><video src="../media/zeitraffer_ballista.mp4" poster="../media/zeitraffer_ballista.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div>
+      <div>
+        <h3><span lang="en">Build anywhere, then upgrade</span></h3>
+        <p><span lang="en">No fixed slots: you pick the spot on scouted ground, uneven terrain gets levelled. Every tower grows through three upgrade tiers, picks a specialisation and becomes a veteran over time.</span></p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="phone"><video src="../media/web_05_palisade.mp4" poster="../media/web_05_palisade.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div>
+      <div>
+        <h3><span lang="en">Fog and ambushes</span></h3>
+        <p><span lang="en">Your towers only see what lies within their reach. Beyond it lies the fog, and that is where the tribes gather. Whoever builds blind builds in the wrong place.</span></p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="duo">
+        <figure><div class="phone"><video src="../media/web_08_feuer.mp4" poster="../media/web_08_feuer.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div><figcaption><span lang="en">VIII · Arsonists</span></figcaption></figure>
+        <figure><div class="phone"><video src="../media/web_11_marsch.mp4" poster="../media/web_11_marsch.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div><figcaption><span lang="en">XI · March through the forest</span></figcaption></figure>
+      </div>
+      <div>
+        <h3><span lang="en">Every mission its own challenge</span></h3>
+        <p><span lang="en">Hold the fort against arsonists, lead a column through the rain-soaked forest, guard workers building camp. Each of the fifteen missions asks its own question.</span></p>
+      </div>
+    </div>
+
+    <div class="more">
+      <div>
+        <h3><span lang="en">Onager &amp; Speculum</span></h3>
+        <p><span lang="en">Heavy stone throwers and a watchtower that forecasts the next wave.</span></p>
+      </div>
+      <div>
+        <h3><span lang="en">Weather and seasons</span></h3>
+        <p><span lang="en">Morning mist, autumn leaves, rain in the forest: every mission has its own mood.</span></p>
+      </div>
+      <div>
+        <h3><span lang="en">Rooted in history</span></h3>
+        <p><span lang="en">Forts, equipment and letters to Rome, as close as we can get to what we know about the Limes.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="teaser">
+  <div class="wrap">
+    <span class="eyebrow"><span lang="en">In the works</span></span>
+    <h2>Britannia</h2>
+    <p class="lead"><span lang="en">Beach landings, tides that open and close the way, hill forts in the mist. The next campaign crosses the Channel.</span></p>
+  </div>
+</section>
+
+<section class="beta" id="beta">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--red)"><span lang="en">Join in</span></span>
+    <h2><span lang="en">Play the beta</span></h2>
+    <p class="lead"><span lang="en">The beta contains the full Germania campaign. Your feedback decides how hard the frontier is to hold.</span></p>
+    <ol class="steps">
+      <li>
+        <h3><span lang="en">Install</span></h3>
+        <p><span lang="en">Android: join the beta group, then join the test on Google Play. iPhone via TestFlight.</span></p>
+      </li>
+      <li>
+        <h3><span lang="en">Play</span></h3>
+        <p><span lang="en">Fifteen missions, three acts. No ads, no purchases.</span></p>
+      </li>
+      <li>
+        <h3><span lang="en">Tell us</span></h3>
+        <p><span lang="en">By email or with the optional play log in the settings.</span></p>
+      </li>
+    </ol>
+    <div class="store-id">
+      <img src="../media/icon.png" alt="App icon of Limes: Rome Tower Defense" width="96" height="96">
+      <div>
+        <strong>Limes: Rome Tower Defense</strong>
+        <p><span lang="en">During the beta the app does not show up in search, only through the links below. This is what it looks like.</span></p>
+      </div>
+    </div>
+    <div class="platform">
+      <h3>Android</h3>
+      <div class="ctas">
+        <a class="btn" href="https://groups.google.com/g/limes-beta"><span lang="en">1 · Join the beta group</span></a>
+        <a class="btn" href="https://play.google.com/apps/testing/ch.mattrudin.limes"><span lang="en">2 · Join the test</span></a>
+      </div>
+      <p><span lang="en">You need a Google account. Sign in for both steps with the account set up on your device. After "Become a tester" a link takes you to Google Play to install; it can take a few minutes until the app shows up there.</span></p>
+    </div>
+    <div class="platform">
+      <h3>iPhone</h3>
+      <div class="ctas">
+        <!-- Platzhalter: öffentlicher TestFlight-Link (testflight.apple.com/join/…) nach Beta App Review -->
+        <span class="btn off" aria-disabled="true"><span lang="en">iPhone beta: coming soon</span></span>
+      </div>
+      <p><span lang="en">You need the free TestFlight app from the App Store.</span></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <!-- Platzhalter: Credits -->
+  <a lang="en" href="../privacy.html?lang=en">Privacy</a>
+  <a href="#">Credits</a>
+  <a href="mailto:matthias.rudin@live.com"><span lang="en">Contact</span></a>
+  <p style="margin-top:1rem">Limes: Rome Tower Defense · © 2026 Matthias Rudin</p>
+</footer>
+
+</body>
+</html>

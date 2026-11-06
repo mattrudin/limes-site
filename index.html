@@ -3,14 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Limes: Rome Tower Defense</title>
+<title>Limes: Rome Tower Defense – Römer-Strategiespiel für iPhone &amp; Android</title>
 <meta name="description" content="Limes: Rome Tower Defense ist ein 3D-Tower-Defense am römischen Limes für iPhone und Android. Jetzt die Germania-Beta testen.">
-<meta property="og:title" content="Limes: Rome Tower Defense">
 <meta name="google-site-verification" content="b3Cb6cH3NlNG7FaV2SI8YvleHDIZ2CE3mqio56bowBI">
+<link rel="canonical" href="https://mattrudin.github.io/limes-site/">
+<link rel="alternate" hreflang="de" href="https://mattrudin.github.io/limes-site/">
+<link rel="alternate" hreflang="en" href="https://mattrudin.github.io/limes-site/en/">
+<link rel="alternate" hreflang="x-default" href="https://mattrudin.github.io/limes-site/">
 <link rel="icon" href="media/icon.png">
 <link rel="apple-touch-icon" href="media/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mattrudin.github.io/limes-site/">
+<meta property="og:title" content="Limes: Rome Tower Defense">
 <meta property="og:description" content="Halte die Grenze Roms vom Rhein bis in den Teutoburger Wald. Jetzt die Beta testen.">
-<meta property="og:image" content="media/02-kastell-abendlicht.webp">
+<meta property="og:image" content="https://mattrudin.github.io/limes-site/media/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Römisches Kastell im Abendlicht, Spielszene aus Limes">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "VideoGame",
+ "name": "Limes: Rome Tower Defense", "url": "https://mattrudin.github.io/limes-site/", "image": "https://mattrudin.github.io/limes-site/media/og-image.jpg",
+ "description": "3D-Tower-Defense am römischen Limes für iPhone und Android, Kampagne Germania mit 15 Missionen.",
+ "genre": ["Tower Defense", "Strategy"], "gamePlatform": ["iOS", "Android"], "operatingSystem": "iOS, Android",
+ "applicationCategory": "GameApplication", "inLanguage": ["de", "en"], "playMode": "SinglePlayer",
+ "author": {"@type": "Person", "name": "Matthias Rudin"},
+ "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}
+</script>
 <meta name="theme-color" content="#1b1410">
 <style>
 @font-face { font-family: Cinzel; src: url(fonts/Cinzel.ttf); font-display: swap; }
@@ -50,7 +71,7 @@ nav {
   padding: 16px; max-width: 1112px; margin: 0 auto; font-size: .9rem;
 }
 nav b { font-weight: 700; letter-spacing: .3em; }
-.lang { background: none; border: 1px solid var(--parchment-dim); color: var(--parchment); font: inherit; padding: .3em .8em; border-radius: 3px; cursor: pointer; }
+.lang { text-decoration: none; background: none; border: 1px solid var(--parchment-dim); color: var(--parchment); font: inherit; padding: .3em .8em; border-radius: 3px; cursor: pointer; }
 
 /* Hero */
 .hero {
@@ -158,7 +179,7 @@ footer a { color: var(--parchment-dim); margin: 0 .6em; }
 
 <nav>
   <b class="brand"><img src="media/icon.png" alt="" width="32" height="32">LIMES</b>
-  <button class="lang" type="button" id="lang" aria-label="Sprache wechseln / switch language">EN</button>
+  <a class="lang" href="en/" hreflang="en" aria-label="English version">EN</a>
 </nav>
 
 <header class="hero">
@@ -334,10 +355,10 @@ footer a { color: var(--parchment-dim); margin: 0 .6em; }
 </footer>
 
 <script>
-  const root = document.documentElement, btn = document.getElementById("lang");
-  function setLang(l) { root.lang = l; btn.textContent = l === "de" ? "EN" : "DE"; }
-  setLang(new URLSearchParams(location.search).get("lang") || (navigator.language.startsWith("de") ? "de" : "en"));
-  btn.onclick = () => setLang(root.lang === "de" ? "en" : "de");
+  // Nicht deutschsprachige Browser auf /en/; Suchmaschinen und ?lang=de sehen die deutsche Seite (hreflang verweist auf beide).
+  const q = new URLSearchParams(location.search).get("lang");
+  if (q === "en" || (!q && !navigator.language.startsWith("de") && !/bot|crawl|spider|slurp|preview/i.test(navigator.userAgent)))
+    location.replace("en/" + location.hash);
 </script>
 </body>
 </html>
